@@ -1,0 +1,107 @@
+﻿@model IEnumerable<MichaelsQuizApp.Question>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.QuestionText)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Answer1Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Answer1Text)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsAnswer1Correct)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Answer2Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Answer2Text)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsAnswer2Correct)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Answer3Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Answer3Text)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsAnswer3Correct)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Answer4Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Answer4Text)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsAnswer4Correct)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestionText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Answer1Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Answer1Text)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAnswer1Correct)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Answer2Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Answer2Text)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAnswer2Correct)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Answer3Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Answer3Text)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAnswer3Correct)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Answer4Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Answer4Text)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAnswer4Correct)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

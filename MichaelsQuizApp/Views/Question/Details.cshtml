@@ -1,0 +1,96 @@
+﻿@model MichaelsQuizApp.Question
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Question</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.QuestionText)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.QuestionText)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Answer1Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Answer1Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Answer1Text)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Answer1Text)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAnswer1Correct)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsAnswer1Correct)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Answer2Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Answer2Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Answer2Text)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Answer2Text)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAnswer2Correct)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsAnswer2Correct)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Answer3Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Answer3Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Answer3Text)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Answer3Text)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAnswer3Correct)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsAnswer3Correct)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Answer4Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Answer4Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Answer4Text)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Answer4Text)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAnswer4Correct)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsAnswer4Correct)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,27 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ul{
+    list-style:none !important;
+}
+.isIncorrectAnswer {
+    background-color: #f93434;
+}
+.isCorrectAnswer {
+    background-color: #34f94b;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
